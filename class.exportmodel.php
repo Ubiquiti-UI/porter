@@ -1444,7 +1444,7 @@ class ExportModel {
     * @return string SQL.
     */
    public static function FileExtension($ColumnName) {
-      return "right($ColumnName, instr(reverse($ColumnName), '.'))";
+      return "right($ColumnName, instr(reverse($ColumnName), '.')-1)";
    }
 }
 ?>
